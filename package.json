@@ -1,0 +1,27 @@
+{
+  "name": "ws_task",
+  "version": "1.0.0",
+  "description": "Template for the WebSocket remote control task",
+  "main": "index.ts",
+  "type": "module",
+  "scripts": {
+    "start": "yarn webpack & node ./dist/bundle.cjs",
+    "start:dev": "yarn webpack --watch & nodemon ./dist/bundle.cjs"
+  },
+  "author": "Anhelina Zhurauliova",
+  "keywords": [],
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^20.11.19",
+    "nodemon": "^3.0.3",
+    "ts-loader": "^9.5.1",
+    "typescript": "^5.3.3",
+    "webpack": "^5.90.3",
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^5.0.2",
+    "webpack-node-externals": "^3.0.0"
+  },
+  "dependencies": {
+    "ws": "^8.16.0"
+  }
+}
