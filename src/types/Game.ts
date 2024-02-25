@@ -1,10 +1,5 @@
 import { Ship } from "./Ships";
 
-export type CreateGameReqData = {
-  idGame: number;
-  idPlayer: number; // id for player in the game session, who have sent add_user_to_room request, not enemy
-};
-
 export type CreateGameResData = {
   idGame: number;
   idPlayer: number; // id for player in the game session, who have sent add_user_to_room request, not enemy

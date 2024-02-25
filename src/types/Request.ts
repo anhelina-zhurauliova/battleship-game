@@ -1,7 +1,7 @@
 import { Command } from "@/types/Command";
 
-export type Request<Data> = {
+export type Request = {
   type: Command;
-  data: Data;
+  data: string;
   id: number;
 };

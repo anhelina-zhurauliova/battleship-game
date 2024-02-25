@@ -5,7 +5,7 @@ export type RegistrationReqData = {
   password: string;
 };
 
-export type RegistrationResData = User & {
-  error: boolean;
-  errorText: string;
+export type RegistrationResData = Omit<User, "password"> & {
+  error?: boolean;
+  errorText?: string;
 };
