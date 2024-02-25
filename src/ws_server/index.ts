@@ -6,7 +6,9 @@ export const wsServerHandler = (ws: WebSocket) => {
     decodeStrings: false,
   });
 
-  wsStream.on("data", async (message) => {
-    console.log("message", JSON.parse(message));
+  wsStream.on("data", async (request) => {
+    const requestObject = JSON.parse(request);
+
+    console.log("message", JSON.parse(request));
   });
 };
